@@ -1,0 +1,53 @@
+input[type='checkbox'] {
+    display: none;
+}
+
+.toggleBox {
+    border-radius: 50px;
+    width: 54px;
+    height: 29px;
+    background-color: var(--toggle-bar-bg);
+    padding: 2px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggleBox .toggleBall {
+    border-radius: 12px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--toggle-ball-bg);
+    position: absolute;
+    z-index: 1;
+}
+
+.toggle:checked+label .toggleBox .toggleBall {
+    transform: translateX(95%);
+    transition: transform 0.3s ease;
+}
+
+.toggleScenery {
+    display: flex;
+    align-items: center;
+}
+
+.toggleScenery svg {
+    display: block;
+}
+
+.toggleSun {
+    z-index: 2;
+    position: absolute;
+    top: 7.25px;
+    left: 8.25px;
+}
+
+.toggleMoon {
+    z-index: 2;
+    position: absolute;
+    top: 7.25px;
+    right: 8.25px;
+}

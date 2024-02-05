@@ -1,0 +1,25 @@
+.mobileMenu {
+    position: fixed;
+    padding: 0 16.5px 57px;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-bg);
+    z-index: 100;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition-property: opacity, visibility, transform;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s ease-in-out;
+}
+
+.mobileMenu.isOpen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transform: translateX(0);
+}

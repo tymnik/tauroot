@@ -1,0 +1,15 @@
+.itemsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 95px;
+}
+
+.itemsList li {
+    font-weight: var(--medium);
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    color: var(--main-blue);
+    text-align: center;
+}

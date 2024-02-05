@@ -1,0 +1,30 @@
+.input {
+    padding: 10.5px 21px;
+    background: var(--search-bar-bg);
+    border: 1px solid var(--toggle-bar-bg);
+    border-radius: 40px;
+    height: 42px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.input::placeholder {
+    font-weight: var(--normal);
+    font-size: 16px;
+    line-height: 1.3125;
+    color: var(--search-bar-text);
+}
+
+.searchContainer {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 11px;
+    right: 16.58px;
+    cursor: pointer;
+}

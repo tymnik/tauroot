@@ -1,0 +1,27 @@
+.headerTop {
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px 11px 17px;
+    justify-content: space-between;
+}
+
+.headerBottom {
+    padding: 15px 28px 15px 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+
+.logo {
+    width: 134px;
+    height: 18px;
+}
+
+.burgerMenuOpen {
+    background-color: var(--body-bg);
+    border: none;
+}

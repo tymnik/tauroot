@@ -1,15 +1,104 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Red Hat Display",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+:root {
+  /*static-colors*/
+  --white: #fff;
+  --dark-blue: #0e1219;
+  --main-blue: #2a86e5;
+  --grey: #707070;
+  --sub-grey: #b3b3b1;
+  --main-green: #0dd0ba;
+  /*font-weight*/
+  --normal: 400;
+  --medium: 500;
+  --bold: 700;
+  --extra-bold: 900;
+  /*light-mode*/
+  --body-bg: #fff;
+  --card-bg: #fff;
+  --main-text: #707070;
+  --search-bar-bg: #eee;
+  --search-bar-text: #757575;
+  --toggle-bar-bg: #fff;
+  --toggle-ball-bg: #183a5d;
+  --footer-card-content: #0dd0ba;
+  --article-subtext: #b3b3b1;
+}
+
+[data-theme='dark'] {
+  --body-bg: #0e1219;
+  --card-bg: #202434;
+  --main-text: #fff;
+  --search-bar-bg: #183a5d;
+  --search-bar-text: #fff;
+  --toggle-bar-bg: #183a5d;
+  --toggle-ball-bg: #fff;
+  --footer-card-content: #fff;
+  --article-subtext: #fff;
 }

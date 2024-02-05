@@ -1,0 +1,22 @@
+.navBar {
+    height: 29px;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navBar li {
+    display: flex;
+    width: 29px;
+    height: 29px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar svg {
+    fill: white;
+}

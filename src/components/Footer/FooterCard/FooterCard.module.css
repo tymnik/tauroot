@@ -1,0 +1,97 @@
+.footerCard {
+    padding: 48px auto 27px;
+    border-radius: 20px;
+    width: 310px;
+    height: 376px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+    background: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 23px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footerCard {
+        padding: 34px auto 27px;
+        width: 668px;
+        height: 309px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footerCard {
+        padding: 61px auto 21px;
+        width: 351px;
+        height: 394px;
+    }
+}
+
+.footerLogo {
+    font-weight: var(--normal);
+    font-size: 30px;
+    line-height: 0.76667;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 41px;
+}
+
+@media screen and (min-width: 768px) {
+    .footerLogo {
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footerLogo {
+        width: 321px;
+        height: 124px;
+        margin: 0 auto 10px;
+    }
+}
+
+.footerCardTextBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 3px 0px 0px;
+    width: 253px;
+    height: 127px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .footerCardTextBlock {
+        width: 524px;
+        height: 79px;
+        text-align: center;
+        gap: 14px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footerCardTextBlock {
+        width: 291px;
+        height: 127px;
+        text-align: start;
+        gap: 12px;
+        padding: 0px 4px 0px 0px;
+    }
+}
+
+.footerCardText {
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--normal);
+    font-size: 16px;
+    line-height: 1.4375;
+    letter-spacing: 0.03em;
+    color: var(--footer-card-content);
+}

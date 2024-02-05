@@ -1,0 +1,24 @@
+.navBar {
+    width: 253px;
+    height: 37px;
+    margin: 24px auto 0;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar li {
+    display: flex;
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar svg {
+    display: block;
+    fill: var(--footer-card-content);
+}
