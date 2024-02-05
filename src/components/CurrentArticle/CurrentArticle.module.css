@@ -11,7 +11,7 @@
 @media screen and (min-width: 1280px) {
     .articlesSection {
         width: 810px;
-        padding:unset;
+        padding: unset;
         margin: 0 auto;
     }
 }
@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 1280px) {
     .articlesNavigation {
-    text-align: start;
+        text-align: start;
     }
 }
 
@@ -49,11 +49,6 @@
     .articleTitle {
         font-size: 42px;
         line-height: 1.28571;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .articleTitle {
         text-align: start;
     }
 }

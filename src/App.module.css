@@ -1,0 +1,17 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+    .pageContent {
+        flex-direction: row;
+        width: 1170px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    aside {
+        margin-left: 59px;
+    }
+}

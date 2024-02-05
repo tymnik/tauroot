@@ -1,0 +1,45 @@
+.adsContainer {
+    display: none;
+}
+
+@media screen and (min-width: 1270px) {
+    .adsContainer {
+        display: block;
+        width: 300px;
+        height: 600px;
+        background: linear-gradient(110deg, #fcb738 0%, #ef793c 100%), url('../../images/ads-img.png');
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+        border-radius: 20px;
+    }
+}
+
+.adsTextBlock {
+    width: 185px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.adsText {
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #fcfcfc;
+    margin-top: 244px;
+}
+
+.adsSize {
+    font-weight: var(--bold);
+    font-size: 40px;
+    line-height: 0.575;
+    letter-spacing: 0.01em;
+    color: #fcfcfc;
+}
