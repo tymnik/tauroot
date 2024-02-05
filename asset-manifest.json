@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/tauroot/static/css/main.48cb9e96.css",
-    "main.js": "/tauroot/static/js/main.aaf4965b.js",
+    "main.css": "/tauroot/static/css/main.c4814281.css",
+    "main.js": "/tauroot/static/js/main.1168948c.js",
     "static/css/719.a19b1dae.chunk.css": "/tauroot/static/css/719.a19b1dae.chunk.css",
     "static/js/719.582851fe.chunk.js": "/tauroot/static/js/719.582851fe.chunk.js",
     "static/css/123.666e87ce.chunk.css": "/tauroot/static/css/123.666e87ce.chunk.css",
     "static/js/123.6ab1168c.chunk.js": "/tauroot/static/js/123.6ab1168c.chunk.js",
-    "static/css/877.d716ac08.chunk.css": "/tauroot/static/css/877.d716ac08.chunk.css",
+    "static/css/877.709d55cf.chunk.css": "/tauroot/static/css/877.709d55cf.chunk.css",
     "static/js/877.57cd694a.chunk.js": "/tauroot/static/js/877.57cd694a.chunk.js",
     "static/css/831.4381f77d.chunk.css": "/tauroot/static/css/831.4381f77d.chunk.css",
     "static/js/831.f0e44c5b.chunk.js": "/tauroot/static/js/831.f0e44c5b.chunk.js",
     "static/css/155.2e1e8a8d.chunk.css": "/tauroot/static/css/155.2e1e8a8d.chunk.css",
     "static/js/155.85682e38.chunk.js": "/tauroot/static/js/155.85682e38.chunk.js",
     "static/js/439.c395f8b4.chunk.js": "/tauroot/static/js/439.c395f8b4.chunk.js",
+    "static/media/ads-img.png": "/tauroot/static/media/ads-img.c4934227e3e5e40340be.png",
     "static/media/banner-bg-desktop-2x.jpg": "/tauroot/static/media/banner-bg-desktop-2x.59dc50ae05b657e80c47.jpg",
     "static/media/banner-bg-tablet-2x.jpg": "/tauroot/static/media/banner-bg-tablet-2x.ba9a9d2a3c05765c4814.jpg",
     "static/media/banner-bg-mob-2x.jpg": "/tauroot/static/media/banner-bg-mob-2x.174263532849620cf5ab.jpg",
@@ -23,13 +24,13 @@
     "static/media/icons.svg": "/tauroot/static/media/icons.b772a554e25df4340c48e213c456f6ea.svg",
     "static/media/banner-bg-mob.jpg": "/tauroot/static/media/banner-bg-mob.4dc170715a925d7a974e.jpg",
     "index.html": "/tauroot/index.html",
-    "main.48cb9e96.css.map": "/tauroot/static/css/main.48cb9e96.css.map",
-    "main.aaf4965b.js.map": "/tauroot/static/js/main.aaf4965b.js.map",
+    "main.c4814281.css.map": "/tauroot/static/css/main.c4814281.css.map",
+    "main.1168948c.js.map": "/tauroot/static/js/main.1168948c.js.map",
     "719.a19b1dae.chunk.css.map": "/tauroot/static/css/719.a19b1dae.chunk.css.map",
     "719.582851fe.chunk.js.map": "/tauroot/static/js/719.582851fe.chunk.js.map",
     "123.666e87ce.chunk.css.map": "/tauroot/static/css/123.666e87ce.chunk.css.map",
     "123.6ab1168c.chunk.js.map": "/tauroot/static/js/123.6ab1168c.chunk.js.map",
-    "877.d716ac08.chunk.css.map": "/tauroot/static/css/877.d716ac08.chunk.css.map",
+    "877.709d55cf.chunk.css.map": "/tauroot/static/css/877.709d55cf.chunk.css.map",
     "877.57cd694a.chunk.js.map": "/tauroot/static/js/877.57cd694a.chunk.js.map",
     "831.4381f77d.chunk.css.map": "/tauroot/static/css/831.4381f77d.chunk.css.map",
     "831.f0e44c5b.chunk.js.map": "/tauroot/static/js/831.f0e44c5b.chunk.js.map",
@@ -38,7 +39,7 @@
     "439.c395f8b4.chunk.js.map": "/tauroot/static/js/439.c395f8b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48cb9e96.css",
-    "static/js/main.aaf4965b.js"
+    "static/css/main.c4814281.css",
+    "static/js/main.1168948c.js"
   ]
 }
