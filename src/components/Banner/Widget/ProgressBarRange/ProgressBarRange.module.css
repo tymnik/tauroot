@@ -1,77 +1,75 @@
-.progressBarRange {
+.fieldGroup {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.rangeField {
+    appearance: none;
+    outline: none;
+    border-radius: 17px;
     width: 269px;
     height: 35px;
-    position: relative;
+    overflow: hidden;
+}
+
+.rangeField {
+    appearance: none;
+    width: 269px;
+    height: 35px;
+    border-radius: 17px;
+    background: var(--progress-range-bg);
+    overflow: hidden;
+    transition: background 450ms ease-in-out;
+}
+
+.rangeField::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 35px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
 }
 
 .barScale {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 35px;
+    right: 0;
+    margin-right: 12px;
     font-weight: var(--bold);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 9.61px;
+    color: var(--white);
 }
 
-.barScale p {
+.barScaleTitle {
+    position: absolute;
+    display: flex;
+    margin: 9px 0 0 11.5px;
     color: var(--white);
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
 }
 
-.barScale ul {
-    display: flex;
-    width: 206px;
-    justify-content: space-between;
-    margin-left: 9.61px;
-    color: var(--white);
-    align-items: center;
-}
-
-.barScale ul li {
+.barScale li {
     display: flex;
     width: 20px;
     align-items: center;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
-    cursor: pointer;
 }
 
-.barScale ul li::before {
+.barScale li::before {
     content: "";
     width: 1px;
     height: 35px;
     background-color: var(--white);
     margin-right: 6px;
     display: block;
-}
-
-.barToggle {
-    /* -webkit-appearance: none; */
-    width: 100%;
-    height: 100%;
-    background: #ebf6f5;
-}
-
-
-input[type="range"]::-webkit-slider-runnable-track {
-    background: linear-gradient(to right, #DC4A19, #FCC539);
-    border-radius: 17px;
-    width: 206px;
-    height: 100%;
-    border-radius: 17px;
-}
-
-input[type="range"]::-moz-range-progress {
-    background-color: linear-gradient(to right, #DC4A19, #FCC539);
-    border-radius: 17px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    display: none;
 }

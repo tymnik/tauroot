@@ -87,9 +87,10 @@ button {
   --search-bar-text: #757575;
   --toggle-bar-bg: #fff;
   --toggle-ball-bg: #183a5d;
+  --progress-range-bg: #ebf6f5;
   --footer-card-content: #0dd0ba;
   --article-subtext: #b3b3b1;
-  --footer-logo: #000;
+  --footer-logo: #000;  
 }
 
 [data-theme='dark'] {
@@ -100,6 +101,7 @@ button {
   --search-bar-text: #fff;
   --toggle-bar-bg: #183a5d;
   --toggle-ball-bg: #fff;
+  --progress-range-bg: #183a5d;
   --footer-card-content: #fff;
   --article-subtext: #fff;
   --footer-logo: #fff;
