@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './Footer.module.css';
+
 import FooterCard from './FooterCard/FooterCard';
 import FooterLists from './FooterLists/FooterLists';
-import styles from './Footer.module.css';
 
 const Footer = () => {
   return (

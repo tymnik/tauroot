@@ -1,6 +1,7 @@
 import React from 'react'
-import ProgressBarCircle from './ProgressBarCircle/ProgressBarCircle'
 import styles from './Widget.module.css'
+
+import ProgressBarCircle from './ProgressBarCircle/ProgressBarCircle';
 
 const Widget = () => {
   return (

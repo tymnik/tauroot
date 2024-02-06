@@ -1,6 +1,7 @@
 import React from 'react';
-import FooterNavIcons from '../FooterNavIcons/FooterNavIcons';
 import styles from './FooterCard.module.css';
+
+import FooterNavIcons from '../FooterNavIcons/FooterNavIcons';
 
 const FooterCard = () => {
 

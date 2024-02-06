@@ -24,7 +24,7 @@ const ProgressBarCircle = () => {
       <GradientSVG />
       <div
         className={styles.circularBackground}
-        style={{ width: '70px', height: '70px' }} // Set the width and height of the background
+        style={{ width: '70px', height: '70px' }}
       />
       <div className={styles.circularBar}>
         <CircularProgressbar

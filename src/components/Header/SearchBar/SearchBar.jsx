@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import icon from "../../../images/icons.svg";
-import styles from "./SearchBar.module.css";
+import React, { useState } from 'react';
+import icon from '../../../images/icons.svg';
+import styles from './SearchBar.module.css';
 
-//Для реалізації роботи пошуку статей використовується react-router-dom
-//створюється папка для роботи з api, де зберігається логіка
-//тоді ми переписуємо App.jsx під маршрутизацію, додаємо навігацію сторінками
+//Для реалізації роботи пошуку статей я би використала react-router-dom:
+//створити папку для роботи з api, де зберігається логіка
+//тоді ми переписуємо App.jsx під маршрутизацію
 
 const SearchBar = ({ onSubmit }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
-  const handleInputChange = (event) => {
+  const handleInputChange = event => {
     setInputValue(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     onSubmit(inputValue);
   };

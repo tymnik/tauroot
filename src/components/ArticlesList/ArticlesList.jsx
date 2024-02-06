@@ -1,6 +1,7 @@
 import React from "react";
-import ArticlesListItem from "./ArticlesListItem/ArticlesListItem";
 import styles from "./ArticlesList.module.css";
+
+import ArticlesListItem from './ArticlesListItem/ArticlesListItem';
 
 const SimilarArticles = () => {
   return (

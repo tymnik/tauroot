@@ -1,8 +1,9 @@
 import React, { Suspense, lazy} from 'react';
+import styles from 'App.module.css';
+
 import Loader from './components/Loader/Loader';
 import SocialLinks from 'components/SocialLinks/SocialLinks';
 import Ads from 'components/Ads/Ads';
-import styles from 'App.module.css';
 
 const Header = lazy(() => import('./components/Header/Header'));
 const Banner = lazy(() => import('./components/Banner/Banner'));

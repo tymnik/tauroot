@@ -1,16 +1,15 @@
 import React from 'react';
 import icon from '../../../images/icons.svg';
-import CardImg from '../../../images/Card/card-img-tablet-2x.jpg';
 import styles from './ArticlesListItem.module.css';
+
+import {ArticleImgShown} from './ArticleImgShown'
 
 const ArticlesListItem = () => {
   return (
     <div className={styles.articleCard}>
-      <img
-        src={CardImg}
-        alt="Article illustration"
-        className={styles.cardImg}
-      />
+      <div className={styles.cardImg}>
+        <ArticleImgShown />
+      </div>
       <a href="/">
         <p className={styles.cardTitle}>Lorem Ipsum is simply dummy</p>
       </a>
