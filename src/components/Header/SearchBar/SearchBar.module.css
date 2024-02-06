@@ -8,6 +8,12 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .searchBar {
+        padding: 0;
+    }
+}
+
 .input {
     padding: 10.5px 21px;
     background: var(--search-bar-bg);
@@ -38,15 +44,32 @@
     }
 }
 
-.searchContainer {
-    position: relative;
-    flex: 1;
-    display: flex;
+@media screen and (min-width: 1280px) {
+    .input {
+        margin: 0;
+        width: 176px;
+        height: 42px;
+    }
 }
 
 .searchIcon {
     position: absolute;
-    top: 121px;
-    right: 16.58px;
+    top: 119px;
+    right: 32.83px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .searchIcon {
+        top: 132px;
+        right: 30.83px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .searchIcon {
+        top:5px;
+        right: 30.83px;
+       position: relative;
+    }
 }

@@ -36,6 +36,8 @@
 @media screen and (min-width: 1280px) {
     .headerTop {
         width: 1170px;
+        padding: unset;
+        align-items: center;
     }
 }
 
@@ -57,6 +59,9 @@
 @media screen and (min-width: 1280px) {
     .headerBottom {
         width: 1170px;
+        justify-content: start;
+        padding: unset;
+        align-items: center;
     }
 }
 
@@ -64,6 +69,33 @@
     width: 134px;
     height: 18px;
     margin-right: auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        margin-right: 61px;
+    }
+}
+
+.itemsDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .itemsDesktop {
+        display: flex;
+    }
+}
+
+.searchDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .searchDesktop {
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .burgerButton {

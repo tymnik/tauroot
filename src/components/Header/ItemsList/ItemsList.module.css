@@ -12,6 +12,14 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .itemsList {
+        flex-direction: row;
+        gap: 28px;
+        width: 508px;
+        }
+}
+
 .itemsList li {
     font-weight: var(--medium);
     font-size: 18px;

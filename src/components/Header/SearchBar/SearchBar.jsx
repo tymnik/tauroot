@@ -30,8 +30,13 @@ const SearchBar = ({ onSubmit }) => {
             value={inputValue}
             onChange={handleInputChange}
           />
-          <i className={styles.searchIcon}>
-            <svg width="19" height="20" fill="#E1541B">
+          <i>
+            <svg
+              width="19"
+              height="20"
+              fill="#E1541B"
+              className={styles.searchIcon}
+            >
               <use xlinkHref={`${icon}#search`}></use>
             </svg>
           </i>

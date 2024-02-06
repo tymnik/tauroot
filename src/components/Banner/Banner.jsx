@@ -30,6 +30,7 @@ const Banner = () => {
           <Widget />
         </div>
       </div>
+     <div className={styles.bannerMenuItemsDesktop}> <BannerMenu items={items}/></div>
       <div className={styles.bannerMenu}>
         <h3 className={styles.bannerMenuText}>More info</h3>
         <button

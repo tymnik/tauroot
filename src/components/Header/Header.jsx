@@ -48,6 +48,12 @@ const Header = () => {
                 className={styles.logo}
               />
             </a>
+            <div className={styles.itemsDesktop}>
+              <ItemsList />
+            </div>
+            <div className={styles.searchDesktop}>
+              <SearchBar />
+            </div>
             <button
               type="button"
               className={styles.burgerButton}

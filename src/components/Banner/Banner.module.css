@@ -236,9 +236,25 @@
 }
 
 .barRangeComponent {
-    display: block;
-    margin-left: auto;
-    margin-right: 33px;
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .barRangeComponent {
+        display: block;
+        margin-left: auto;
+        margin-right: 33px;
+    }
+}
+
+.bannerMenuItemsDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerMenuItemsDesktop {
+        display: flex;
+    }
 }
 
 .bannerMenu {
