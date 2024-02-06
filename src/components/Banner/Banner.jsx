@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import avatar from '../../images/Banner/banner-ava.png';
 import icon from '../../images/icons.svg';
 import DownloadButtons from './DownloadButtons/DownloadButtons';
+import Widget from 'components/Banner/Widget/Widget';
 import BannerMenu from './BannerMenu/BannerMenu';
 import styles from './Banner.module.css';
 
@@ -23,6 +24,7 @@ const Banner = () => {
         <div className={styles.btnsBlock}>
           <DownloadButtons />
         </div>
+        <div className={styles.bannerWidget}><Widget/></div>
       </div>
       <div className={styles.bannerMenu}>
         <h3 className={styles.bannerMenuText}>More info</h3>
@@ -30,6 +32,7 @@ const Banner = () => {
           type="button"
           className={styles.bannerMenuOpen}
           onClick={() => setMenuActive(!menuActive)}
+          aria-label={menuActive ? 'Close menu' : 'Open menu'}
         >
           <svg width="20" height="16" fill="var(--main-text)">
             <use xlinkHref={`${icon}#banner-burger`} />

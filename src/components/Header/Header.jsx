@@ -1,29 +1,31 @@
 import React, { useState} from 'react';
-import MenuListHeader from './MenuListHeader/MenuListHeader';
-import HeaderNavIcons from './HeaderNavIcons/HeaderNavIcons';
-import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
-import MobMenu from './MobMenu/MobMenu';
-import SearchBar from '../Header/SearchBar/SearchBar';
-import ItemsList from '../Header/ItemsList/ItemsList';
-import MenuList from '../Header/MenuList/MenuList';
 import icon from '../../images/icons.svg';
 import logoLight from '../../images/logo-dark.png';
 import logoDark from '../../images/logo-light.png';
 import styles from './Header.module.css';
 
+import HeaderNavIcons from './HeaderNavIcons/HeaderNavIcons';
+import ItemsList from '../Header/ItemsList/ItemsList';
+import MenuList from '../Header/MenuList/MenuList';
+import MenuListHeader from './MenuListHeader/MenuListHeader';
+import MobMenu from './MobMenu/MobMenu';
+import SearchBar from '../Header/SearchBar/SearchBar';
+import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
+
+
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const handleThemeChange = newDarkMode => {
+    setDarkMode(newDarkMode);
+  };
+
   const items = [
     { value: <SearchBar /> },
     { value: <ItemsList /> },
     { value: <MenuList /> },
   ];
-
-   const [darkMode, setDarkMode] = useState(false);
-
-   const handleThemeChange = newDarkMode => {
-     setDarkMode(newDarkMode);
-   };
 
   return (
     <header className={styles.header}>
@@ -50,10 +52,22 @@ const Header = () => {
               type="button"
               className={styles.burgerButton}
               onClick={() => setMenuActive(!menuActive)}
+              aria-label={menuActive ? 'Close menu' : 'Open menu'}
             >
-              <svg width="26" height="22" className={styles.burger} fill='var(--main-blue)'>
-                <use xlinkHref={`${icon}#burger`} />
-              </svg>
+              {menuActive ? (
+                <svg width="23" height="23" fill="var(--main-blue)">
+                  <use xlinkHref={`${icon}#close`} />
+                </svg>
+              ) : (
+                <svg
+                  width="26"
+                  height="22"
+                  className={styles.burger}
+                  fill="var(--main-blue)"
+                >
+                  <use xlinkHref={`${icon}#burger`} />
+                </svg>
+              )}
             </button>
           </div>
         </div>

@@ -83,6 +83,8 @@
         width: 1170px;
         height: 184px;
         background-image: url('../../images/Banner/banner-bg-desktop.jpg');
+        background-position: center;
+        background-size: contain;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -214,6 +216,22 @@
         top: 98px;
         left: 200px;
         z-index: 3;
+    }
+}
+
+.bannerWidget {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerWidget {
+        position: absolute;
+        top: 56px;
+        right: 59px;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

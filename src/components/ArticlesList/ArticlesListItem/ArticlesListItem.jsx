@@ -19,13 +19,13 @@ const ArticlesListItem = () => {
           <svg width="10" height="13" fill="var(--article-subtext)">
             <use xlinkHref={`${icon}#person`} />
           </svg>
-          <h5 className={styles.cardSubtext}>Alco</h5>
+          <h4 className={styles.cardSubtext}>Alco</h4>
         </li>
         <li className={styles.cardDetailsContent}>
           <svg width="12" height="12" fill="var(--article-subtext)">
             <use xlinkHref={`${icon}#clock`} />
           </svg>
-          <h5 className={styles.cardSubtext}>26 janvier 2023</h5>
+          <h4 className={styles.cardSubtext}>26 janvier 2023</h4>
         </li>
       </ul>
     </div>

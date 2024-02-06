@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import icon from "../../../images/icons.svg";
 import styles from "./SearchBar.module.css";
 
+//Для реалізації роботи пошуку статей використовується react-router-dom
+//створюється папка для роботи з api, де зберігається логіка
+//тоді ми переписуємо App.jsx під маршрутизацію, додаємо навігацію сторінками
+
 const SearchBar = ({ onSubmit }) => {
   const [inputValue, setInputValue] = useState("");
 

@@ -22,6 +22,7 @@ const DownloadButtons = () => {
         <button
           onClick={() => handleDownload('android')}
           className={styles.androidBtn}
+          aria-label="Download for Android"
         >
           <span>
             <svg width="11" height="13" fill="var(--white)">
@@ -32,7 +33,11 @@ const DownloadButtons = () => {
         </button>
       </li>
       <li>
-        <button onClick={() => handleDownload('ios')} className={styles.iosBtn}>
+        <button
+          onClick={() => handleDownload('ios')}
+          className={styles.iosBtn}
+          aria-label="Download for iOS"
+        >
           <span>
             <svg width="12" height="13" fill="var(--white)">
               <use xlinkHref={`${icon}#ios`} />
@@ -42,7 +47,11 @@ const DownloadButtons = () => {
         </button>
       </li>
       <li>
-        <button onClick={() => handleDownload('pc')} className={styles.pcBtn}>
+        <button
+          onClick={() => handleDownload('pc')}
+          className={styles.pcBtn}
+          aria-label="Download for PC"
+        >
           <span>
             <svg width="17" height="15" fill="var(--white)">
               <use xlinkHref={`${icon}#download`} />

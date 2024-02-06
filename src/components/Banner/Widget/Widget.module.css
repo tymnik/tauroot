@@ -1,0 +1,30 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.widgetUsers {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.widgetUsersAmount {
+    font-weight: var(--medium);
+    font-size: 16px;
+    color: var(--white);
+}
+
+.widgetUserRating {
+    font-weight: var(--bold);
+    font-size: 16px;
+    color: var(--white);
+}
+
+.userRatingScale {
+    font-weight: var(--bold);
+    font-size: 20px;
+    color: #f9b936;
+    margin-left: 2px;
+}

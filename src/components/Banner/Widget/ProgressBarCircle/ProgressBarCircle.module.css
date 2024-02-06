@@ -1,0 +1,34 @@
+.circularBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 86px;
+    height: 85px;
+}
+
+.circularBackground {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #0e1219;
+    position: absolute;
+}
+
+.circularBar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.barTextContent {
+    position: absolute;
+    font-weight: var(--extra-bold);
+    color: var(--white);
+    font-size: 29px;
+    line-height: 1.2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
