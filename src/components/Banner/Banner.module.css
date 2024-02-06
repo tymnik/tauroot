@@ -234,6 +234,13 @@
         align-items: center;
     }
 }
+@media screen and (min-width: 1280px) {
+.bannerMenuWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+}
 
 .barRangeComponent {
     display: none;

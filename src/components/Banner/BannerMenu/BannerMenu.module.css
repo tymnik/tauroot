@@ -26,11 +26,12 @@
 @media screen and (min-width: 1280px) {
     .bannerContent {
         flex-direction: row;
-        margin-top: 12px;
+        margin-top: 10px;
         margin-left: 56px;
         gap: 19px;
         width: 488px;
         height: 26px;
+        align-items: center;
     }
 }
 
@@ -64,7 +65,7 @@
         font-size: 16px;
         line-height: 1.625;
         text-align: start;
-        color: var(--main-text);
+        color: var(--grey);
         background: unset;
         background-clip: text;
         -webkit-background-clip: unset;
@@ -88,7 +89,7 @@
         display: block;
         width: 1px;
         height: 21px;
-        background-color: var(--main-text);
+        background-color: var(--grey);
         margin-right: 17px;
     }
 }

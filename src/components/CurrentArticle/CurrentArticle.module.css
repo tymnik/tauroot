@@ -36,6 +36,10 @@
     }
 }
 
+.articleLinkCurrent {
+    font-weight: var(--bold);
+}
+
 .articleTitle {
     font-weight: var(--extra-bold);
     font-size: 35px;

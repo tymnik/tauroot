@@ -30,22 +30,26 @@ const Banner = () => {
           <Widget />
         </div>
       </div>
-     <div className={styles.bannerMenuItemsDesktop}> <BannerMenu items={items}/></div>
-      <div className={styles.bannerMenu}>
-        <h3 className={styles.bannerMenuText}>More info</h3>
-        <button
-          type="button"
-          className={styles.bannerMenuOpen}
-          onClick={() => setMenuActive(!menuActive)}
-          aria-label={menuActive ? 'Close menu' : 'Open menu'}
-        >
-          <svg width="20" height="16" fill="var(--main-text)">
-            <use xlinkHref={`${icon}#banner-burger`} />
-          </svg>
-        </button>
-        <div className={styles.barRangeComponent}>
-          <ProgressBarRange />
+      <div className={styles.bannerMenuWrapper}>
+        <div className={styles.bannerMenuItemsDesktop}>
+          <BannerMenu items={items} />
         </div>
+        <div className={styles.bannerMenu}>
+          <h3 className={styles.bannerMenuText}>More info</h3>
+          <button
+            type="button"
+            className={styles.bannerMenuOpen}
+            onClick={() => setMenuActive(!menuActive)}
+            aria-label={menuActive ? 'Close menu' : 'Open menu'}
+          >
+            <svg width="20" height="16" fill="var(--main-text)">
+              <use xlinkHref={`${icon}#banner-burger`} />
+            </svg>
+          </button>
+          <div className={styles.barRangeComponent}>
+            <ProgressBarRange />
+          </div>
+      </div>
       </div>
       <BannerMenu
         items={items}
