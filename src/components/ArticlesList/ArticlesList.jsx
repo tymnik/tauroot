@@ -5,7 +5,7 @@ import styles from "./ArticlesList.module.css";
 const SimilarArticles = () => {
   return (
     <section className={styles.articlesBlock}>
-        <h3 className={styles.articlesBlockTitle}>Similar articles</h3>
+        <h2 className={styles.articlesBlockTitle}>Similar articles</h2>
         <ul className={styles.articlesList}>
           <li>
             <ArticlesListItem />

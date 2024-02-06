@@ -235,6 +235,12 @@
     }
 }
 
+.barRangeComponent {
+    display: block;
+    margin-left: auto;
+    margin-right: 33px;
+}
+
 .bannerMenu {
     display: flex;
     justify-content: center;

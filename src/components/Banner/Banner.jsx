@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import avatar from '../../images/Banner/banner-ava.png';
 import icon from '../../images/icons.svg';
+import styles from './Banner.module.css';
+
 import DownloadButtons from './DownloadButtons/DownloadButtons';
 import Widget from 'components/Banner/Widget/Widget';
+import ProgressBarRange from './Widget/ProgressBarRange/ProgressBarRange';
 import BannerMenu from './BannerMenu/BannerMenu';
-import styles from './Banner.module.css';
 
 const Banner = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -24,7 +26,9 @@ const Banner = () => {
         <div className={styles.btnsBlock}>
           <DownloadButtons />
         </div>
-        <div className={styles.bannerWidget}><Widget/></div>
+        <div className={styles.bannerWidget}>
+          <Widget />
+        </div>
       </div>
       <div className={styles.bannerMenu}>
         <h3 className={styles.bannerMenuText}>More info</h3>
@@ -38,6 +42,9 @@ const Banner = () => {
             <use xlinkHref={`${icon}#banner-burger`} />
           </svg>
         </button>
+        <div className={styles.barRangeComponent}>
+          <ProgressBarRange />
+        </div>
       </div>
       <BannerMenu
         items={items}

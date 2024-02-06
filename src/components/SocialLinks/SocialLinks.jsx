@@ -36,14 +36,14 @@ const SocialLinks = () => {
         </li>
         <li className={styles.faceIcon}>
           <a href="/" target="_blank">
-            <svg width="19" height="19" fill="#fff">
+            <svg width="19" height="19" fill="#fff" aria-label="Face">
               <use xlinkHref={`${icon}#face`} />
             </svg>
           </a>
         </li>
         <li className={styles.heartIcon}>
           <a href="/" target="_blank">
-            <svg width="16" height="15" fill="#fff">
+            <svg width="16" height="15" fill="#fff" aria-label="Heart">
               <use xlinkHref={`${icon}#heart`} />
             </svg>
           </a>
