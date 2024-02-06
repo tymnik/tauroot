@@ -89,6 +89,7 @@ button {
   --toggle-ball-bg: #183a5d;
   --footer-card-content: #0dd0ba;
   --article-subtext: #b3b3b1;
+  --footer-logo: #000;
 }
 
 [data-theme='dark'] {
@@ -101,4 +102,5 @@ button {
   --toggle-ball-bg: #fff;
   --footer-card-content: #fff;
   --article-subtext: #fff;
+  --footer-logo: #fff;
 }

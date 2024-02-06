@@ -1,10 +1,42 @@
-.headerTop {
+.headerWrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerTopWrapper {
     background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerBottomWrapper {
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerTop {
     height: 50px;
     display: flex;
     align-items: center;
     padding: 10px 14px 11px 17px;
     justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .headerTop {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .headerTop {
+        width: 1170px;
+    }
 }
 
 .headerBottom {
@@ -13,15 +45,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: static;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .headerBottom {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .headerBottom {
+        width: 1170px;
+    }
 }
 
 .logo {
     width: 134px;
     height: 18px;
+    margin-right: auto;
 }
 
-.burgerMenuOpen {
-    background-color: var(--body-bg);
+.burgerButton {
+    background: none;
     border: none;
+    cursor: pointer;
+    padding: 0;
+    display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .burgerButton {
+        display: none;
+    }
+}
+
+.menuListWideScreen {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menuListWideScreen {
+        display: flex;
+    }
 }

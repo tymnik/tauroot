@@ -1,0 +1,53 @@
+.socialLinksBar {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .socialLinksBar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 286px;
+        left: 0;
+    }
+}
+
+.socialLinksBar li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.socialLinksBar li:hover, .socialLinksBar li:focus {
+transform: scale(1.2);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fbIcon {
+    background: #3a579a;
+    border-radius: 0 4px 0 0;
+}
+
+.twitterIcon {
+    background: #00abf0;
+}
+
+.telegramIcon {
+    background: #24a2e0;
+}
+
+.pinterestIcon {
+    background: #cd1c1f;
+}
+
+.faceIcon {
+    background: #fc461e;
+}
+
+.heartIcon {
+    background: #f95149;
+    border-radius: 0 0 4px 0;
+}

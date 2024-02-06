@@ -1,7 +1,7 @@
-import React from "react";
-import icon from "../../../images/icons.svg";
-import CardImg from "../../../images/Card/card-img-tablet-2x.jpg";
-import styles from "./ArticlesListItem.module.css";
+import React from 'react';
+import icon from '../../../images/icons.svg';
+import CardImg from '../../../images/Card/card-img-tablet-2x.jpg';
+import styles from './ArticlesListItem.module.css';
 
 const ArticlesListItem = () => {
   return (
@@ -11,7 +11,9 @@ const ArticlesListItem = () => {
         alt="Article illustration"
         className={styles.cardImg}
       />
-      <h4 className={styles.cardTitle}>Lorem Ipsum is simply dummy</h4>
+      <a href="/">
+        <p className={styles.cardTitle}>Lorem Ipsum is simply dummy</p>
+      </a>
       <ul className={styles.cardDetails}>
         <li className={styles.cardDetailsContent}>
           <svg width="10" height="13" fill="var(--article-subtext)">

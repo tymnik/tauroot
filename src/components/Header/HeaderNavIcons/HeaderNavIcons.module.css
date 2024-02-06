@@ -2,6 +2,13 @@
     height: 29px;
 }
 
+@media screen and (min-width: 1280px) {
+    .navBar {
+        width: 199px;
+        margin-right: 20px;
+    }
+}
+
 .navList {
     display: flex;
     align-items: center;
@@ -15,8 +22,14 @@
     height: 29px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .navBar svg {
-    fill: white;
+    fill: var(--white);
+}
+
+.navBar svg:hover,
+.navBar svg:focus {
+    transform: scale(1.2);
 }

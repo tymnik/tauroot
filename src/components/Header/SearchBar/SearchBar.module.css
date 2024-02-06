@@ -1,3 +1,13 @@
+.searchBar {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .searchBar {
+        padding: 11px 14.25px 0 20.25px;
+    }
+}
+
 .input {
     padding: 10.5px 21px;
     background: var(--search-bar-bg);
@@ -5,8 +15,14 @@
     border-radius: 40px;
     height: 42px;
     width: 100%;
-    margin-bottom: 50px;
+    margin: 110px auto 50px;
     position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
 }
 
 .input::placeholder {
@@ -14,6 +30,12 @@
     font-size: 16px;
     line-height: 1.3125;
     color: var(--search-bar-text);
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        margin: 110px auto 75px;
+    }
 }
 
 .searchContainer {
@@ -24,7 +46,7 @@
 
 .searchIcon {
     position: absolute;
-    top: 11px;
+    top: 121px;
     right: 16.58px;
     cursor: pointer;
 }

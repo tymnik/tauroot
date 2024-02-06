@@ -48,6 +48,6 @@ input[type='checkbox'] {
 .toggleMoon {
     z-index: 2;
     position: absolute;
-    top: 7.25px;
-    right: 8.25px;
+    top: 6px;
+    right: 4.69px;
 }

@@ -1,19 +1,16 @@
 import React from "react";
 import styles from "./BannerMenu.module.css";
 
-const BannerMenu = ({ setIsOpenBannerMenu, isOpenBannerMenu }) => {
+const BannerMenu = ({ items, active, setActive }) => {
   return (
     <div
-      className={`${styles.bannerMenu} ${
-        isOpenBannerMenu ? styles.isOpen : ""
-      }`}
+      className={active ? `${styles.bannerMenu} ${styles.active}` : styles.menu}
+      onClick={() => setActive(false)}
     >
-      <ul className={styles.bannerList}>
-        <li className={styles.currentItem}>Lorem Ipsum is simply dummy</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
+      <ul className={styles.bannerContent}>
+        {items.map((item, index) => (
+          <li key={index}>{item.value}</li>
+        ))}
       </ul>
     </div>
   );

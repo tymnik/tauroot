@@ -8,6 +8,12 @@
     box-shadow: 0 3px 16px 0 rgba(42, 134, 229, 0.08);
     margin: 0 auto;
     background-color: var(--card-bg);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.articleCard:hover,
+.articleCard:focus {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
 }
 
 @media screen and (min-width: 1280px) {

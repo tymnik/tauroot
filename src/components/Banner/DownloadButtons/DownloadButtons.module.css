@@ -1,0 +1,73 @@
+.buttonsList {
+    display: flex;
+    gap: 8px;
+}
+
+.androidBtn {
+    border: 1px solid var(--white);
+    border-radius: 17px;
+    padding: 5px 16px 5px 13px;
+    width: 99px;
+    height: 28px;
+    background-color: transparent;
+    font-weight: var(--normal);
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.androidBtn:hover,
+.androidBtn:focus {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+}
+
+.iosBtn {
+    border: 1px solid var(--white);
+    border-radius: 17px;
+    padding: 5px 16px 5px 13px;
+    width: 70px;
+    height: 28px;
+    background-color: transparent;
+    font-weight: var(--normal);
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.iosBtn:hover,
+.iosBtn:focus {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+}
+
+.pcBtn {
+    border: none;
+    border-radius: 17px;
+    padding: 5px 14px 5px 13px;
+    width: 159px;
+    height: 28px;
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+    font-weight: var(--normal);
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pcBtn:hover,
+.pcBtn:focus {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+}

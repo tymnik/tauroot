@@ -10,6 +10,15 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .hero {
+        border-radius: 40px;
+        width: 1170px;
+        margin: 0 auto 52px;
+        height: 219px;
+    }
+}
+
 .banner {
     position: relative;
     width: 350px;
@@ -29,7 +38,7 @@
 @media screen and (min-width: 1280px) {
     .banner {
         width: 1170px;
-        height: 184px;
+        height: 168px;
     }
 }
 
@@ -148,6 +157,14 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .ava {
+        top: 22px;
+        left: 56px;
+
+    }
+}
+
 .bannerText {
     position: absolute;
     width: 206px;
@@ -175,13 +192,28 @@
 
 @media screen and (min-width: 1280px) {
     .bannerText {
-        bottom: 96px;
+        bottom: unset;
+        top: 38px;
         right: unset;
         left: 200px;
         width: 606px;
         height: 36px;
         font-size: 30px;
         letter-spacing: 0.02em;
+    }
+}
+
+.btnsBlock {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .btnsBlock {
+        display: block;
+        position: absolute;
+        top: 98px;
+        left: 200px;
+        z-index: 3;
     }
 }
 

@@ -1,5 +1,6 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy} from 'react';
 import Loader from './components/Loader/Loader';
+import SocialLinks from 'components/SocialLinks/SocialLinks';
 import Ads from 'components/Ads/Ads';
 import styles from 'App.module.css';
 
@@ -14,20 +15,26 @@ const SimilarArticles = lazy(() =>
 const Footer = lazy(() => import('./components/Footer/Footer'));
 
 const App = () => {
+
   return (
     <Suspense fallback={<Loader />}>
       <Header />
-      <Banner />
-      <div className={styles.pageContent}>
-        <div>
-          <CurrentArticle />
-          <SimilarArticles />
-        </div>
+      <div className={styles.main}>
+        <Banner />
         <aside>
-          <Ads />
+          <SocialLinks />
         </aside>
+        <div className={styles.pageContent}>
+          <div>
+            <CurrentArticle />
+            <SimilarArticles />
+          </div>
+          <aside className={styles.adsElement}>
+            <Ads />
+          </aside>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Suspense>
   );
 };

@@ -1,10 +1,12 @@
 .articlesSection {
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .articlesSection {
         padding: 0 20px;
+        max-width: 768px;
     }
 }
 
@@ -23,11 +25,13 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--grey);
-    margin-bottom: 2px;
+    margin: 0 auto 2px;
+    width: 350px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
     .articlesNavigation {
+        width: unset;
         text-align: start;
     }
 }

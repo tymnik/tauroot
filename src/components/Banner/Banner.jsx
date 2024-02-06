@@ -1,39 +1,46 @@
-import React, { useState } from "react";
-import { Divide as Hamburger } from "hamburger-react";
-import avatar from "../../images/Banner/banner-ava.png";
-import BannerMenu from "./BannerMenu/BannerMenu";
-import styles from "./Banner.module.css";
+import React, { useState } from 'react';
+import avatar from '../../images/Banner/banner-ava.png';
+import icon from '../../images/icons.svg';
+import DownloadButtons from './DownloadButtons/DownloadButtons';
+import BannerMenu from './BannerMenu/BannerMenu';
+import styles from './Banner.module.css';
 
 const Banner = () => {
-  const [isOpenBannerMenu, setIsOpenBannerMenu] = useState(false);
-  const onOpenBannerMenu = () => setIsOpenBannerMenu(!isOpenBannerMenu);
-
-  const [isOpen, setOpen] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
+  const items = [
+    { value: 'Lorem Ipsum is simply dummy' },
+    { value: 'item' },
+    { value: 'item' },
+    { value: 'item' },
+    { value: 'item' },
+  ];
 
   return (
     <section className={styles.hero}>
       <div className={styles.banner}>
         <img src={avatar} alt="User avatar" className={styles.ava} />
         <h2 className={styles.bannerText}>Lorem Ipsum is simply dummy</h2>
+        <div className={styles.btnsBlock}>
+          <DownloadButtons />
+        </div>
       </div>
       <div className={styles.bannerMenu}>
         <h3 className={styles.bannerMenuText}>More info</h3>
         <button
           type="button"
           className={styles.bannerMenuOpen}
-          onClick={() => onOpenBannerMenu()}
+          onClick={() => setMenuActive(!menuActive)}
         >
-          <Hamburger
-            color="#707070"
-            toggled={isOpen}
-            size={20}
-            rounded
-            toggle={setOpen}
-            label="Show menu"
-          />
+          <svg width="20" height="16" fill="var(--main-text)">
+            <use xlinkHref={`${icon}#banner-burger`} />
+          </svg>
         </button>
-        <BannerMenu isOpenBannerMenu={isOpen} setIsOpenBannerMenu={setOpen} />
       </div>
+      <BannerMenu
+        items={items}
+        active={!menuActive}
+        setActive={setMenuActive}
+      />
     </section>
   );
 };

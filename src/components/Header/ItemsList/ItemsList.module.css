@@ -2,7 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 95px;
+    margin-bottom: 63px;
+}
+
+@media screen and (min-width: 768px) {
+    .itemsList {
+        gap: 50px;
+        margin-bottom: unset;
+    }
 }
 
 .itemsList li {

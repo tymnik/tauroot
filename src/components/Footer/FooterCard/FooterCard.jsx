@@ -1,11 +1,14 @@
-import React from "react";
-import styles from "./FooterCard.module.css";
-import FooterNavIcons from "../FooterNavIcons/FooterNavIcons";
+import React from 'react';
+import FooterNavIcons from '../FooterNavIcons/FooterNavIcons';
+import styles from './FooterCard.module.css';
 
 const FooterCard = () => {
+
   return (
     <div className={styles.footerCard}>
-      <h2 className={styles.footerLogo}>LOGOTYPE</h2>
+      <a href="/">
+        <h2 className={styles.footerLogo}>LOGOTYPE</h2>
+      </a>
       <div className={styles.footerCardTextBlock}>
         <p className={styles.footerCardText}>Lorem Ipsum is simply dummy</p>
         <p className={styles.footerCardText}>

@@ -1,26 +1,32 @@
-import React from "react";
-import styles from "./ThemeSwitcher.module.css";
-import icon from "../../../images/icons.svg";
+import React, { useState, useEffect } from 'react';
+import styles from './ThemeSwitcher.module.css';
+import icon from '../../../images/icons.svg';
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ onThemeChange }) => {
+  const savedTheme = localStorage.getItem('theme');
+  const [darkMode, setDarkMode] = useState(savedTheme === 'dark');
 
-  const setDarkMode = () => {
-    document.querySelector('body').setAttribute('data-theme', 'dark')
-  }
+  useEffect(() => {
+    const currentTheme = document.body.getAttribute('data-theme');
+    setDarkMode(currentTheme === 'dark');
+  }, []);
 
-   const setLightMode = () => {
-     document.querySelector("body").setAttribute("data-theme", "light");
+  const toggleTheme = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    onThemeChange(newDarkMode);
+    document.body.setAttribute('data-theme', newDarkMode ? 'dark' : 'light');
+
+    localStorage.setItem('theme', newDarkMode ? 'dark' : 'light');
   };
-  const toggleTheme = e => {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
-  }
+
   return (
     <div className={styles.toggleContainer}>
       <input
         type="checkbox"
         id="check"
         className={styles.toggle}
+        checked={darkMode}
         onChange={toggleTheme}
       />
       <label htmlFor="check">

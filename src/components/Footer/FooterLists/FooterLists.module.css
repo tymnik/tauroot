@@ -17,6 +17,16 @@
         height: 301px;
         padding: 95px 83.73px 47px 0;
     }
+
+    .footerLists ul li::before {
+        content: '';
+        display: inline-block;
+        border-radius: 100%;
+        width: 5px;
+        height: 5px;
+        background-color: var(--white);
+        margin-right: 9px;
+    }
 }
 
 .footerListCateghory {
@@ -71,7 +81,6 @@
 @media screen and (min-width: 1280px) {
     .categhoryItems {
         align-items: start;
-        list-style: disc;
         gap: 3px;
     }
 }
@@ -148,7 +157,6 @@
 @media screen and (min-width: 1280px) {
     .playItems {
         align-items: start;
-        list-style: disc;
         gap: 3px;
     }
 }
@@ -219,7 +227,6 @@
 @media screen and (min-width: 1280px) {
     .linksItems {
         align-items: start;
-        list-style: disc;
         gap: 3px;
         margin-right: 5px;
     }

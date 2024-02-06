@@ -8,7 +8,7 @@ const Footer = () => {
     <section className={styles.footerContainer}>
       <div className={styles.footer}>
         <div className={styles.footerWrapper}>
-          <FooterCard />
+          <FooterCard/>
           <div className={styles.footerSecondBlock}>
             <FooterLists />
             <p className={styles.copyrightText}>

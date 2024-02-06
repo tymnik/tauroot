@@ -16,9 +16,17 @@
     height: 37px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .navBar svg {
     display: block;
+    flex-grow: 1;
+    height: 100%;
     fill: var(--footer-card-content);
+}
+
+.navBar svg:hover,
+.navBar svg:focus {
+    transform: scale(1.2);
 }

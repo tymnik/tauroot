@@ -1,17 +1,19 @@
-import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
-import ItemsList from "../ItemsList/ItemsList";
-import MenuList from "../MenuList/MenuList";
-import styles from "./MobMenu.module.css";
+import React from 'react';
+import styles from './MobMenu.module.css';
 
-const MobMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
+const MobMenu = ({ items, active, setActive }) => {
   return (
     <div
-      className={`${styles.mobileMenu} ${isOpenMobileMenu && styles.isOpen}`}
-      >
-      <SearchBar />
-      <ItemsList />
-      <MenuList />
+      className={active ? `${styles.mobMenu} ${styles.active}` : styles.menu}
+      onClick={()=>setActive(false)}
+    >
+      <div className={styles.mobMenuContent} onClick={e => e.stopPropagation()}>
+        <ul>
+          {items.map((item, index) => (
+            <li key={index}>{item.value}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
