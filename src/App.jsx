@@ -16,7 +16,7 @@ const SimilarArticles = lazy(() =>
 const Footer = lazy(() => import('./components/Footer/Footer'));
 
 const App = () => {
-
+  
   return (
     <Suspense fallback={<Loader />}>
       <Header />

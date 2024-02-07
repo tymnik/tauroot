@@ -2,6 +2,7 @@
     box-shadow: 0 22px 59px 0 rgba(42, 134, 229, 0.07);
     margin-bottom: 20px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -16,6 +17,7 @@
         width: 1170px;
         margin: 0 auto 52px;
         height: 219px;
+        padding-bottom: 13px;
     }
 }
 
@@ -52,6 +54,7 @@
     height: 129px;
     background-image: url('../../images/Banner/banner-bg-mob.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -81,7 +84,7 @@
 @media screen and (min-width: 1280px) {
     .banner::before {
         width: 1170px;
-        height: 184px;
+        height: 100%;
         background-image: url('../../images/Banner/banner-bg-desktop.jpg');
         background-position: center;
         background-size: contain;
@@ -219,27 +222,13 @@
     }
 }
 
-.bannerWidget {
-    display: none;
-}
 
 @media screen and (min-width: 1280px) {
-    .bannerWidget {
-        position: absolute;
-        top: 56px;
-        right: 59px;
-        z-index: 5;
+    .bannerMenuWrapper {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
     }
-}
-@media screen and (min-width: 1280px) {
-.bannerMenuWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 }
 
 .barRangeComponent {
@@ -292,5 +281,21 @@
 @media screen and (min-width: 1280px) {
     .bannerMenuOpen {
         display: none;
+    }
+}
+
+.bannerWidget {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerWidget {
+        position: absolute;
+        top: 41px;
+        right: 33px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -26,7 +26,7 @@
 @media screen and (min-width: 1280px) {
     .bannerContent {
         flex-direction: row;
-        margin-top: 10px;
+        margin-top: 12px;
         margin-left: 56px;
         gap: 19px;
         width: 488px;

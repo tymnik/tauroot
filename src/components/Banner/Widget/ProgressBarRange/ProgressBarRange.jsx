@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styles from './ProgressBarRange.module.css';
 
-const ProgressBarRange = () => {
+const ProgressBarRange = ({ onVoteChange }) => {
   const sliderRef = useRef(null);
   const [background, setBackground] = useState('');
 
@@ -11,9 +11,11 @@ const ProgressBarRange = () => {
     setBackground(
       `linear-gradient(to right, #DC4A19 , #FCC539 ${percent}%, var(--progress-range-bg)${percent}%)`
     );
+
+    onVoteChange(value);
   };
 
-  return (
+    return (
     <div>
       <div className={styles.fieldGroup}>
         <label htmlFor="range" className={styles.rangeLabel}>

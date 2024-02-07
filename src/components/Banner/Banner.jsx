@@ -4,9 +4,8 @@ import icon from '../../images/icons.svg';
 import styles from './Banner.module.css';
 
 import DownloadButtons from './DownloadButtons/DownloadButtons';
-import Widget from 'components/Banner/Widget/Widget';
-import ProgressBarRange from './Widget/ProgressBarRange/ProgressBarRange';
 import BannerMenu from './BannerMenu/BannerMenu';
+import Widget from './Widget/Widget';
 
 const Banner = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -26,9 +25,6 @@ const Banner = () => {
         <div className={styles.btnsBlock}>
           <DownloadButtons />
         </div>
-        <div className={styles.bannerWidget}>
-          <Widget />
-        </div>
       </div>
       <div className={styles.bannerMenuWrapper}>
         <div className={styles.bannerMenuItemsDesktop}>
@@ -46,16 +42,16 @@ const Banner = () => {
               <use xlinkHref={`${icon}#banner-burger`} />
             </svg>
           </button>
-          <div className={styles.barRangeComponent}>
-            <ProgressBarRange />
-          </div>
-      </div>
+        </div>
       </div>
       <BannerMenu
         items={items}
         active={!menuActive}
         setActive={setMenuActive}
       />
+      <div className={styles.bannerWidget}>
+        <Widget />
+      </div>
     </section>
   );
 };

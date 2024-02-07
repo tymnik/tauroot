@@ -1,5 +1,26 @@
+.widget {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .widget {
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        gap: 50px;
+    }
+}
+
+.widgetWrapper {
+    display: flex;
+    width: 217px;
+   margin: 0 27px 0 25px;
+    height: 84.98;
+}
+
 .textContainer {
     display: flex;
+    width: 119px;
     flex-direction: column;
     margin-left: 12px;
 }
