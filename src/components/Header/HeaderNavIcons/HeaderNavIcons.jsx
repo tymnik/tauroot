@@ -68,7 +68,7 @@ const HeaderNavIcons = () => {
         </li>
         <li>
           <a
-            href="/"
+            href="/public/page404.html"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="RSS Feed"

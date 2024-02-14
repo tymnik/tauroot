@@ -1,22 +1,17 @@
-import React, { Suspense, lazy} from 'react';
+import React, { Suspense} from 'react';
 import styles from 'App.module.css';
 
 import Loader from './components/Loader/Loader';
 import SocialLinks from 'components/SocialLinks/SocialLinks';
 import Ads from 'components/Ads/Ads';
 
-const Header = lazy(() => import('./components/Header/Header'));
-const Banner = lazy(() => import('./components/Banner/Banner'));
-const CurrentArticle = lazy(() =>
-  import('./components/CurrentArticle/CurrentArticle')
-);
-const SimilarArticles = lazy(() =>
-  import('./components/ArticlesList/ArticlesList')
-);
-const Footer = lazy(() => import('./components/Footer/Footer'));
+import Header from 'components/Header/Header';
+import Banner from 'components/Banner/Banner';
+import CurrentArticle from 'components/CurrentArticle/CurrentArticle';
+import SimilarArticles from 'components/ArticlesList/ArticlesList';
+import Footer from 'components/Footer/Footer';
 
-const App = () => {
-  
+const App = () => {  
   return (
     <Suspense fallback={<Loader />}>
       <Header />

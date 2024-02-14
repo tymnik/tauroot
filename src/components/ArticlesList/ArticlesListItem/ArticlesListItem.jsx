@@ -10,7 +10,7 @@ const ArticlesListItem = () => {
       <div className={styles.cardImg}>
         <ArticleImgShown />
       </div>
-      <a href="/">
+      <a href="/public/page404.html">
         <p className={styles.cardTitle}>Lorem Ipsum is simply dummy</p>
       </a>
       <ul className={styles.cardDetails}>

@@ -1,9 +1,10 @@
 import React from "react";
 import { RotatingLines } from "react-loader-spinner";
+import styles from './Loader.module.css'
 
 const Loader = () => {
   return (
-    <div>
+    <div className={styles.loader}>
       <RotatingLines
         strokeColor="grey"
         strokeWidth="5"

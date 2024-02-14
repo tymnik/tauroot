@@ -5,11 +5,11 @@ const CurrentArticle = () => {
   return (
     <section className={styles.articlesSection}>
       <div className={styles.articlesNavigation}>
-        <a href="/">Home</a>
+        <a href="/public/page404.html">Home</a>
         <span>&#x3e;</span>
-        <a href="/">Lorem Ipsum is</a>
+        <a href="/public/page404.html">Lorem Ipsum is</a>
         <span>&#x3e;</span>
-        <a href="/" className={styles.articleLinkCurrent}>
+        <a href="/public/page404.html" className={styles.articleLinkCurrent}>
           Lorem Ipsum is simply dummy
         </a>
       </div>

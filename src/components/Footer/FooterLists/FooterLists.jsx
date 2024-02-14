@@ -28,19 +28,19 @@ const FooterLists = () => {
         <h3 className={styles.linksTitle}>Useful links</h3>
         <ul className={styles.linksItems}>
           <li>
-             <a href="/">link</a>
+            <a href="/public/page404.html">link</a>
           </li>
           <li>
-             <a href="/">link</a>
+            <a href="/public/page404.html">link</a>
           </li>
           <li>
-             <a href="/">link</a>
+            <a href="/public/page404.html">link</a>
           </li>
           <li>
-             <a href="/">link</a>
+            <a href="/public/page404.html">link</a>
           </li>
           <li>
-             <a href="/">link</a>
+            <a href="/public/page404.html">link</a>
           </li>
         </ul>
       </div>

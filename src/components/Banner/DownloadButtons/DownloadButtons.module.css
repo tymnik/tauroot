@@ -18,12 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .androidBtn:hover,
 .androidBtn:focus {
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
     box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+    border: none;
 }
 
 .iosBtn {
@@ -41,21 +43,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .iosBtn:hover,
 .iosBtn:focus {
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
     box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+    border: none;
 }
 
 .pcBtn {
-    border: none;
+    border: 1px solid var(--white);
     border-radius: 17px;
     padding: 5px 14px 5px 13px;
     width: 159px;
     height: 28px;
-    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+    background-color: transparent;
     font-weight: var(--normal);
     font-size: 14px;
     line-height: 1.28571;
@@ -64,10 +68,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .pcBtn:hover,
 .pcBtn:focus {
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
     box-shadow: 0 8px 16px rgba(52, 152, 219, 0.5);
+    border: none;
 }

@@ -22,11 +22,11 @@ input[type='checkbox'] {
     background-color: var(--toggle-ball-bg);
     position: absolute;
     z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .toggle:checked+label .toggleBox .toggleBall {
     transform: translateX(95%);
-    transition: transform 0.3s ease;
 }
 
 .toggleScenery {

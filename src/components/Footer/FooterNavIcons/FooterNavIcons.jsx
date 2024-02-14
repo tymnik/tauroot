@@ -1,6 +1,6 @@
-import React from "react";
-import icon from "../../../images/icons.svg";
-import styles from "./FooterNavIcons.module.css";
+import React from 'react';
+import icon from '../../../images/icons.svg';
+import styles from './FooterNavIcons.module.css';
 
 const FooterNavIcons = () => {
   return (
@@ -68,7 +68,7 @@ const FooterNavIcons = () => {
         </li>
         <li>
           <a
-            href="/"
+            href="/public/page404.html"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="RSS Feed"

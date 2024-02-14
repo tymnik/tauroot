@@ -6,7 +6,7 @@ import FooterLists from './FooterLists/FooterLists';
 
 const Footer = () => {
   return (
-    <section className={styles.footerContainer}>
+    <footer className={styles.footerContainer}>
       <div className={styles.footer}>
         <div className={styles.footerWrapper}>
           <FooterCard/>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

@@ -7,7 +7,7 @@ const FooterCard = () => {
 
   return (
     <div className={styles.footerCard}>
-      <a href="/">
+      <a href="/public/page404.html">
         <h2 className={styles.footerLogo}>LOGOTYPE</h2>
       </a>
       <div className={styles.footerCardTextBlock}>
